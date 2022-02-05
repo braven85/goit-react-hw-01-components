@@ -10,7 +10,7 @@ function Statistics(props) {
   const view = stats.map(stat => (
     <li key={stat.id} className={styles.item} style={{ backgroundColor: getRandomHexColor() }}>
       <span className={styles.label}>{stat.label}</span>
-      <span className={styles.percentage}>{stat.percentage}</span>
+      <span className={styles.percentage}>{stat.percentage}%</span>
     </li>
   ));
 
@@ -33,7 +33,7 @@ function Statistics(props) {
 Statistics.propTypes = {
   id: PropTypes.number,
   label: PropTypes.string,
-  percentage: PropTypes.string,
+  percentage: PropTypes.number,
 };
 
 export default Statistics;

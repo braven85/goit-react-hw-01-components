@@ -1,10 +1,11 @@
-{ 
+{
   "username": "Timothy Grant",
-  "tag": "@tgrant",
+  "tag": "tgrant",
   "location": "Sao Paulo, Brazil",
-  "avatar": "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
-  "stats": "online",
-  "followers": 198,
-  "views": 3685,
-  "likes": 492
+  "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+  "stats": {
+    "followers": 343,
+    "views": 6432,
+    "likes": 734
+  }
 }

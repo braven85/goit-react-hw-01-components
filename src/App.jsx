@@ -15,15 +15,21 @@ import items from './Transactions/transactions.json';
 function App() {
   return (
     <div className="App">
-      <a href='https://github.com/braven85/goit-react-hw-01-components'><h1>Oryginalny kod projektu</h1></a>
+      <a href="https://github.com/braven85/goit-react-hw-01-components">
+        <h1>Oryginalny kod projektu</h1>
+      </a>
       {/* Zadanie 1 - Profil w sieci społecznościowej */}
+      <h2>Zadanie 1 - Profil w sieci społecznościowej</h2>
       <Profile user={user} />
       {/* Zadanie 2 - Sekcja statystyki */}
+      <h2>Zadanie 2 - Sekcja statystyki</h2>
       <Statistics stats={stats} />
       <Statistics title="Upload stats" stats={stats} />
       {/* Zadanie 3 - Lista znajomych */}
+      <h2>Zadanie 3 - Lista znajomych</h2>
       <FriendList friends={friends} />
       {/* Zadanie 4 - Historia transakcji */}
+      <h2>Zadanie 4 - Historia transakcji</h2>
       <TransactionHistory items={items} />
     </div>
   );
