@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "type": "Deposit",
+    "amount": 125.0,
+    "currency": "PLN"
+  },
+  {
+    "id": 2,
+    "type": "Invoice",
+    "amount": 85.5,
+    "currency": "USD"
+  },
+  {
+    "id": 3,
+    "type": "Payment",
+    "amount": 634.45,
+    "currency": "GBP"
+  },
+  {
+    "id": 4,
+    "type": "Withdrawal",
+    "amount": 253.57,
+    "currency": "EUR"
+  }
+]
