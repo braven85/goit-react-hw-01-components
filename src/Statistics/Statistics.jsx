@@ -1,41 +1,39 @@
-import './Statistics.css';
+import styles from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-function setColors() {
-  const listItems = document.querySelectorAll('.item');
-  listItems.forEach(item => {
-    item.style.backgroundColor = getRandomHexColor();
-  });
-}
-
 function Statistics(props) {
   const stats = props.stats;
   const view = stats.map(stat => (
-    <li key={stat.id} className="item">
-      <span className="label">{stat.label}</span>
-      <span className="percentage">{stat.percentage}</span>
+    <li key={stat.id} className={styles.item} style={{ backgroundColor: getRandomHexColor() }}>
+      <span className={styles.label}>{stat.label}</span>
+      <span className={styles.percentage}>{stat.percentage}</span>
     </li>
   ));
 
   if (props.title === undefined) {
-    setColors();
     return (
-      <section className="statistics">
-        <ul className="stat-list">{view}</ul>
+      <section className={styles.statistics}>
+        <ul className={styles.stat__list}>{view}</ul>
       </section>
     );
   } else {
-    setColors();
     return (
-      <section className="statistics">
-        <h2 className="title">{props.title}</h2>
-        <ul className="stat-list">{view}</ul>
+      <section className={styles.statistics}>
+        <h2 className={styles.title}>{props.title}</h2>
+        <ul className={styles.stat__list}>{view}</ul>
       </section>
     );
   }
 }
+
+Statistics.propTypes = {
+  id: PropTypes.number,
+  label: PropTypes.string,
+  percentage: PropTypes.string,
+};
 
 export default Statistics;

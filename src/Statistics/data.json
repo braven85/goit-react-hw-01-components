@@ -20,8 +20,13 @@
     "id": 4
   },
   {
-    "label": ".mp4",
-    "percentage": "12%",
+    "label": ".mkv",
+    "percentage": "62%",
     "id": 5
+  },
+  {
+    "label": ".doc",
+    "percentage": "37%",
+    "id": 6
   }
 ]

@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <h1>Hello world</h1>
       {/* Zadanie 1 - Profil w sieci społecznościowej */}
-      {/* <Profile user={user} /> */}
+      <Profile user={user} />
       {/* Zadanie 2 - Sekcja statystyki */}
-      {/* <Statistics stats={stats} /> */}
+      <Statistics stats={stats} />
       <Statistics title="Upload stats" stats={stats} />
     </div>
   );
