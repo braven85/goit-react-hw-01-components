@@ -1,16 +1,18 @@
 import './App.css';
 
-import Profile from './Profile/Profile';
-import user from './Profile/user.json';
+import Profile from './components/Profile/Profile';
+import user from './components/Profile/user.json';
 
-import Statistics from './Statistics/Statistics';
-import stats from './Statistics/data.json';
+import Statistics from './components/Statistics/Statistics';
+import stats from './components/Statistics/data.json';
 
-import FriendList from './FriendList/FriendList';
-import friends from './FriendList/friends.json';
+import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friends.json';
 
-import TransactionHistory from './Transactions/TransactionHistory';
-import items from './Transactions/transactions.json';
+import TransactionHistory from './components/Transactions/TransactionHistory';
+import items from './components/Transactions/transactions.json';
+
+import HorizontalLine from './components/HorizontalLine';
 
 function App() {
   return (
@@ -19,52 +21,20 @@ function App() {
         <h1>Oryginalny kod projektu</h1>
       </a>
       {/* Zadanie 1 - Profil w sieci społecznościowej */}
-      <hr
-        style={{
-          width: '50%',
-          height: '4px',
-          backgroundColor: 'black',
-          borderRadius: '5px',
-          borderWidth: '0',
-        }}
-      ></hr>
+      <HorizontalLine />
       <h2>Zadanie 1 - Profil w sieci społecznościowej</h2>
       <Profile user={user} />
       {/* Zadanie 2 - Sekcja statystyki */}
-      <hr
-        style={{
-          width: '50%',
-          height: '4px',
-          backgroundColor: 'black',
-          borderRadius: '5px',
-          borderWidth: '0',
-        }}
-      ></hr>
+      <HorizontalLine />
       <h2>Zadanie 2 - Sekcja statystyki</h2>
       <Statistics stats={stats} />
       <Statistics title="Upload stats" stats={stats} />
       {/* Zadanie 3 - Lista znajomych */}
-      <hr
-        style={{
-          width: '50%',
-          height: '4px',
-          backgroundColor: 'black',
-          borderRadius: '5px',
-          borderWidth: '0',
-        }}
-      ></hr>
+      <HorizontalLine />
       <h2>Zadanie 3 - Lista znajomych</h2>
       <FriendList friends={friends} />
       {/* Zadanie 4 - Historia transakcji */}
-      <hr
-        style={{
-          width: '50%',
-          height: '4px',
-          backgroundColor: 'black',
-          borderRadius: '5px',
-          borderWidth: '0',
-        }}
-      ></hr>
+      <HorizontalLine />
       <h2>Zadanie 4 - Historia transakcji</h2>
       <TransactionHistory items={items} />
     </div>
