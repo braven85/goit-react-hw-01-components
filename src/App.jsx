@@ -19,16 +19,52 @@ function App() {
         <h1>Oryginalny kod projektu</h1>
       </a>
       {/* Zadanie 1 - Profil w sieci społecznościowej */}
+      <hr
+        style={{
+          width: '50%',
+          height: '4px',
+          backgroundColor: 'black',
+          borderRadius: '5px',
+          borderWidth: '0',
+        }}
+      ></hr>
       <h2>Zadanie 1 - Profil w sieci społecznościowej</h2>
       <Profile user={user} />
       {/* Zadanie 2 - Sekcja statystyki */}
+      <hr
+        style={{
+          width: '50%',
+          height: '4px',
+          backgroundColor: 'black',
+          borderRadius: '5px',
+          borderWidth: '0',
+        }}
+      ></hr>
       <h2>Zadanie 2 - Sekcja statystyki</h2>
       <Statistics stats={stats} />
       <Statistics title="Upload stats" stats={stats} />
       {/* Zadanie 3 - Lista znajomych */}
+      <hr
+        style={{
+          width: '50%',
+          height: '4px',
+          backgroundColor: 'black',
+          borderRadius: '5px',
+          borderWidth: '0',
+        }}
+      ></hr>
       <h2>Zadanie 3 - Lista znajomych</h2>
       <FriendList friends={friends} />
       {/* Zadanie 4 - Historia transakcji */}
+      <hr
+        style={{
+          width: '50%',
+          height: '4px',
+          backgroundColor: 'black',
+          borderRadius: '5px',
+          borderWidth: '0',
+        }}
+      ></hr>
       <h2>Zadanie 4 - Historia transakcji</h2>
       <TransactionHistory items={items} />
     </div>
