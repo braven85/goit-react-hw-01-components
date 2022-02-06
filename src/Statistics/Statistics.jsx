@@ -14,20 +14,16 @@ function Statistics(props) {
     </li>
   ));
 
-  if (props.title === undefined) {
-    return (
-      <section className={styles.statistics}>
-        <ul className={styles.stat__list}>{view}</ul>
-      </section>
-    );
-  } else {
-    return (
-      <section className={styles.statistics}>
+  return (
+    <section className={styles.statistics}>
+      {props.title === undefined ? (
+        <h2 className={styles.hidden}></h2>
+      ) : (
         <h2 className={styles.title}>{props.title}</h2>
-        <ul className={styles.stat__list}>{view}</ul>
-      </section>
-    );
-  }
+      )}
+      <ul className={styles.stat__list}>{view}</ul>
+    </section>
+  );
 }
 
 Statistics.propTypes = {
