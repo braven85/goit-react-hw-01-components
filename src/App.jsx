@@ -37,6 +37,7 @@ function App() {
       <HorizontalLine />
       <h2>Zadanie 4 - Historia transakcji</h2>
       <TransactionHistory items={items} />
+      {/* test */}
     </div>
   );
 }
